@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Javascript calculator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <title>My calculator</title>
+  </head>
+  <body>
+    <h1>Basic calculator</h1>
+    <br />
+    <form id="myform" name="calc">
+      <input
+        name="edit"
+        style="
+          width: 675px;
+          height: 100px;
+          text-align: center center;
+          background-color: #1f80c0;
+        "
+      />
+      <br />
+      <input type="button" value="0" OnClick="calc.edit.value+='0'" />
+      <input type="button" value="1" OnClick="calc.edit.value+='1'" />
+      <input type="button" value="2" OnClick="calc.edit.value+='2'" />
+      <input
+        type="button"
+        value="+"
+        OnClick="calc.edit.value+='+'"
+        style="background-color: #cc5c11"
+      />
+      <br />
+      <input type="button" value="3" OnClick="calc.edit.value+='3'" />
+      <input type="button" value="4" OnClick="calc.edit.value+='4'" />
+      <input type="button" value="5" OnClick="calc.edit.value+='5'" />
+      <input
+        type="button"
+        value="-"
+        OnClick="calc.edit.value+='-'"
+        style="background-color: #ba55d3"
+      />
+      <br />
+      <input type="button" value="6" OnClick="calc.edit.value+='6'" />
+      <input type="button" value="7" OnClick="calc.edit.value+='7'" />
+      <input type="button" value="8" OnClick="calc.edit.value+='8'" />
+      <input
+        type="button"
+        value="x"
+        OnClick="calc.edit.value+='*'"
+        style="background-color: #7db1b2"
+      />
+      <br />
+      <input type="button" value="9" OnClick="calc.edit.value+='9'" />
+      <input
+        type="button"
+        value="C"
+        OnClick="calc.edit.value='0'"
+        style="background-color: #cc0000"
+        <input
+        type="button"
+        value="="
+        OnClick="calc.edit.value=eval(
+       calc.edit.value)"
+      />
+      <input type="button" value="&#247;" OnClick="calc.edit.value+='/'" />
+      style=background-color:green; >
+      <br />
+    </form>
+  </body>
+</html>
